@@ -1,4 +1,4 @@
-# New IOS Keychain bug crashes Apps when typing to autofill password
+# IOS 14 Keychain bug that crashes App when clicking on Password fields
 
 Since Apple released the IOS v14, The Safari browser in all IOS devices have a problem with the Input type's `password` which the application crashes when you click on the Password Input.
 The problem is The `Keychain` has a critical problem and wants to autofill a user match but will crashes while loading the matches, So I tried so many ways to fix this issue, and I found these solutions:
@@ -21,6 +21,13 @@ The problem is The `Keychain` has a critical problem and wants to autofill a use
     ```
     And Check if the Safari Version is Greater than 14 or not, If yes, then the Type attribute of Password Fields should be replaced by `text` and then add the `conceal` class to the Input, if not then the Password filed's type should be `password`. I wrote a few [examples](https://github.com/ali-master/ios-password-field-crashes/tree/master/examples) in `React`, `Pure javascript`, and `jQuery`. 
 2. To disable the Keychain `autofill` crashes bug, Add the `autocomplete="off"` attribute to the Password fields. It works just in some cases(I don't know why!!!). 
+3. Disable the Keychain `Autofill` feature. Follow the instruction:
+<div align="center">
+	<p align="center">
+		<img src="https://raw.githubusercontent.com/ali-master/ios-password-field-crashes/master/images/disable-ios-autofill.png" border="0" />
+	</p>
+</div>
+Now, Your iPhone has no crash issue with all Password fields on all websites. This solution is not the best solution but it works.
 
 ### Fix the problem in:
 1. `Login pages`: In these types of pages, there is no issue because the Keychain can find a matching item by the `username` and `password` fields while you did the 2nd solution before.
