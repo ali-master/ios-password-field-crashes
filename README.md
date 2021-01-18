@@ -24,7 +24,7 @@ The problem is The `Keychain` has a critical problem and wants to autofill a use
 3. Disable the Keychain `Autofill` feature. Follow the instruction:
 <div align="center">
 	<p align="center">
-		<img src="https://raw.githubusercontent.com/ali-master/ios-password-field-crashes/master/images/disable-ios-autofill.png" border="0" />
+		<img src="https://raw.githubusercontent.com/ali-master/ios-password-field-crashes/master/images/disable-ios14-autofill.jpg" border="0" />
 	</p>
 </div>
 Now, Your iPhone has no crash issue with all Password fields on all websites. This solution is not the best solution but it works.
